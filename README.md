@@ -8,8 +8,8 @@ I modified the CMakeLists and package.xml to make it run on your **"current" ros
 (you can check here https://github.com/HyeonJaeGil/ORB_SLAM2/blob/master/Examples/RGB-D/rgbd_tum.cc)
 
 <p align="center">
-    <img src="./docs/orbslam2-ros-demo1.png"  height="400">
-    <img src="./docs/orbslam2-ros-demo2.png" height="400">
+    <img src="./docs/orbslam2-ros-demo1.png"  height="300">
+    <img src="./docs/orbslam2-ros-demo2.png" height="300">
 </p>
 
 ## How to use (with docker)
