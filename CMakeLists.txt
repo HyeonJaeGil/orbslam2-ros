@@ -93,14 +93,27 @@ ${ORB_SLAM2_DIR}/lib/libORB_SLAM2.so
 #   ${catkin_LIBRARIES}
 # )
 
-
-
 # Node for RGB-D camera
 add_executable(RGBD
 src/ros_rgbd.cc
 )
-
 target_link_libraries(RGBD
+${LIBS}
+)
+
+# Node for Monocular camera
+add_executable(RGBD
+src/ros_mono.cc
+)
+target_link_libraries(RGBD
+${LIBS}
+)
+
+# Node for Stereo camera
+add_executable(Stereo
+src/ros_stereo.cc
+)
+target_link_libraries(Stereo
 ${LIBS}
 )
 
