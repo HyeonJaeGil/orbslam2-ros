@@ -1,4 +1,4 @@
-# orbslam-ros
+# orbslam2-ros
 
 
 This is a (docker-friendly) ros packages for orb slam2. \
@@ -24,7 +24,7 @@ But if ORB_SLAM2 were built successfully on your local machine, there would be n
 
 ### Run docker container.
 ```
-$ docker pull hyeonjaegil/orbslam:ros
+$ docker pull hyeonjaegil/orbslam2:ros
 $ docker run --gpus all --rm -it --ipc=host --net=host --privileged \
   --env="DISPLAY=unix$DISPLAY" \
   -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
