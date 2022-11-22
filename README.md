@@ -14,11 +14,13 @@ I modified the CMakeLists and package.xml to make it run on your **"current" ros
 
 ## How to use (with docker)
 you first need to build orbslam2 with the instruction on https://github.com/HyeonJaeGil/ORB_SLAM2.git. \
-In CMakeLists.txt file, you should change the **ORB_SLAM2_DIR** to the directory where you clone it. \
-(Currently, it is __/root/ORB_SLAM2__.) \
+If you use dockerfile (hyeonjaegil/orbslam2:base), you don't have to go through time-consuming build process. \
+Everything is built inside a docker image. \
+After that, you should change the **ORB_SLAM2_DIR** in CMakeLists.txt of this package to the directory you cloned. \
+Currently, it is __/root/ORB_SLAM2__, and if you use docker, you don't have to fix it. \
 Everything was tested on Docker(ROS Melodic, opencv3.4).\
 But if ORB_SLAM2 were built successfully on your local machine, there would be no problem running this package on local. \
-(You should change **ORB_SLAM2_DIR** in CMakeLists.txt, too!)
+(You should change **ORB_SLAM2_DIR** in CMakeLists.txt, though!)
 
 ### Run docker container.
 ```
