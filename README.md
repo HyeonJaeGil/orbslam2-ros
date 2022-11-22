@@ -33,6 +33,14 @@ $ docker run --gpus all --rm -it --ipc=host --net=host --privileged \
   hyeonjaegil/orbslam2:ros
 ```
 
+### Enable GUI inside a container (important!)
+You should enable GUI inside a container in order to run Pangolin viewer. 
+The most simple way is to share xhost between local and container.
+```
+xhost + local:docker
+```
+
+
 ### Inside the container, run following command...
 ```
 $ rosrun orbslam-ros RGBD \
