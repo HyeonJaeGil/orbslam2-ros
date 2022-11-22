@@ -102,10 +102,10 @@ ${LIBS}
 )
 
 # Node for Monocular camera
-add_executable(RGBD
+add_executable(Mono
 src/ros_mono.cc
 )
-target_link_libraries(RGBD
+target_link_libraries(Mono
 ${LIBS}
 )
 
